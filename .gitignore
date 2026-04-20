@@ -1,5 +1,5 @@
 node_modules/
-bin/
-obj/
-.vs/
+dist/
+Backend/
+frontend_source/
 .DS_Store
