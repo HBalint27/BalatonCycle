@@ -1,0 +1,315 @@
+.add-acc-wrapper {
+    min-height: 100vh;
+    background-color: #fdfbe2; /* Your project's light cream bg */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 20px 60px;
+}
+
+.add-acc-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(74, 63, 53, 0.08);
+}
+
+.add-acc-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.add-acc-header h2 {
+    color: #4a3f35;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.add-acc-header p {
+    color: #8a817c;
+}
+
+.add-acc-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group.full-width {
+    width: 100%;
+}
+
+.form-group label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #4a3f35;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    padding: 14px;
+    border: 1px solid #e0ddd0;
+    border-radius: 12px;
+    font-size: 1rem;
+    background-color: #faf9f6;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #d4a373;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(212, 163, 115, 0.1);
+}
+
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.checkbox-grid label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: #6d6d6d;
+    cursor: pointer;
+}
+
+.section-title {
+    font-weight: bold;
+    color: #4a3f35;
+    margin-bottom: 5px;
+}
+
+.btn-submit-acc {
+    background-color: #d4a373;
+    color: white;
+    padding: 18px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s transform 0.2s;
+    margin-top: 10px;
+}
+
+.btn-submit-acc:hover {
+    background-color: #a67c52;
+    transform: translateY(-2px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+    }
+}
+
+/* ... Previous CSS remains, add these below ... */
+
+.image-upload-section {
+    margin: 20px 0;
+}
+
+.upload-dropzone {
+    border: 2px dashed var(--primary-brown);
+    background-color: rgba(212, 163, 115, 0.05);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.upload-dropzone:hover {
+    background-color: rgba(212, 163, 115, 0.1);
+}
+
+.hidden-input {
+    display: none;
+}
+
+.dropzone-content {
+    cursor: pointer;
+}
+
+.upload-icon {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+
+.main-text {
+    font-weight: 600;
+    color: var(--dark-text);
+}
+
+.sub-text {
+    font-size: 0.8rem;
+    color: #8a817c;
+    margin-top: 5px;
+}
+
+.image-preview-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.preview-item {
+    width: 85px;
+    height: 85px;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid var(--border-color);
+}
+
+.add-more-btn {
+    width: 85px;
+    height: 85px;
+    border-radius: 12px;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #8a817c;
+    cursor: pointer;
+    border: 1px dashed var(--border-color);
+}
+/* --- AMENITIES CHECKBOX GRID --- */
+.amenities-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.custom-check-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 32px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    user-select: none;
+    color: #444;
+}
+
+/* Hide the default browser checkbox */
+.custom-check-item input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create the custom checkbox background */
+.custom-checkmark {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.custom-check-item:hover input ~ .custom-checkmark {
+    background-color: #e9e9e9;
+}
+
+/* When checked, change background to your brand color */
+.custom-check-item input:checked ~ .custom-checkmark {
+    background-color: #d4a373; /* BalatonCycle Orange */
+    border-color: #d4a373;
+}
+
+/* Create the checkmark (hidden when not checked) */
+.custom-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.custom-check-item input:checked ~ .custom-checkmark:after {
+    display: block;
+}
+
+/* Draw the actual checkmark shape */
+.custom-check-item .custom-checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+/* --- INLINE VALIDATION ERRORS --- */
+
+/* The red text that appears under the input */
+.error-message {
+    color: #e63946; /* A clean, modern red */
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-top: 6px;
+    display: block;
+    animation: slideDown 0.2s ease-out; /* Smooth pop-in animation */
+}
+
+/* Red border for the input box itself when an error happens */
+input.input-error, 
+textarea.input-error {
+    border-color: #e63946 !important;
+    background-color: #fffafb; /* Very faint red tint to the background */
+}
+
+/* For the main image dropzone if no image is uploaded */
+.dropzone-error {
+    border-color: #e63946 !important;
+    background-color: #fffafb !important;
+}
+
+.text-error {
+    color: #e63946 !important;
+}
+
+/* Soft slide animation for the text */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

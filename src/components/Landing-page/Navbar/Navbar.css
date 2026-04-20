@@ -1,0 +1,347 @@
+/* --- ALAPOK ÉS NAVIGÁCIÓS SÁV --- */
+.navbar { 
+    background: #fffcf0; 
+    padding: 12px 0; 
+    border-bottom: 1px solid #efe3c9; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000;
+    box-sizing: border-box; 
+    margin: 0; 
+}
+
+.nav-content { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- LOGO SZEKCIÓ --- */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.bike-logo-svg {
+    width: 40px; 
+    height: auto;
+    color: #3d342c; 
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo:hover .bike-logo-svg {
+    color: #d4a373; 
+    transform: translateX(-3px) rotate(-5deg); 
+}
+
+.logo-text {
+    font-size: 22px;
+    letter-spacing: -0.5px;
+    display: flex;
+    gap: 4px;
+    color: #b08968;
+}
+
+.logo-text strong {
+    color: #3d342c;
+}
+
+/* --- JOBB OLDALI BLOKK --- */
+.nav-right { 
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+/* --- KERESŐ --- */
+.search-container { 
+    position: relative; 
+}
+
+.search-icon { 
+    position: absolute; 
+    left: 15px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    color: #b08968; 
+    font-size: 14px; 
+    z-index: 1;
+}
+
+.search-container input { 
+    background: #f5f0d6; 
+    border: none; 
+    padding: 10px 15px 10px 40px; 
+    border-radius: 25px; 
+    width: 250px; 
+    transition: 0.3s; 
+}
+
+.search-container input:focus { 
+    outline: 2px solid #d4a373; 
+    background: #fff; 
+}
+
+/* --- KERESÉSI JAVASLATOK --- */
+.suggestions-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #efe3c9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    list-style: none;
+    padding: 5px 0;
+    margin-top: 5px;
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.suggestions-dropdown li {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #333;
+    text-align: left;
+    transition: 0.2s;
+}
+
+.suggestions-dropdown li:hover {
+    background-color: #f5f5f5;
+    color: #d4a373;
+}
+
+/* --- NAV LINK ÉS GOMB --- */
+.nav-link { 
+    text-decoration: none; 
+    color: #3d342c; 
+    font-weight: 500; 
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.nav-link:hover {
+    color: #d4a373; 
+}
+
+.btn-post { 
+    background: #d4a373;
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 12px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: 0.3s; 
+}
+
+.btn-post:hover { 
+    background: #bc8a5f; 
+    transform: scale(1.02); 
+}
+
+/* --- PROFIL DROPDOWN (HOVER + HÍD) --- */
+.profile-dropdown {
+    position: relative; 
+    /* A láthatatlan híd: padding alul, hogy ne szűnjön meg a hover az egér útja alatt */
+    padding-bottom: 15px;
+    margin-bottom: -15px;
+}
+
+.profile-avatar {
+    width: 38px;
+    height: 38px;
+    background-color: #d4a373;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.profile-avatar:hover {
+    border-color: #d4a373;
+    background-color: #bc8a5f;
+}
+
+.dropdown-menu {
+    /* Alapértelmezett asztali nézet: rejtve, hoverre jön elő */
+    display: flex; 
+    position: absolute;
+    top: 45px; /* Az ikon aljától kicsit lejjebb indul a híd miatt */
+    right: 0;
+    background: white;
+    min-width: 200px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    border: 1px solid #efe3c9;
+    padding: 10px 0;
+    z-index: 1100;
+    flex-direction: column;
+
+    /* Áttűnés animációhoz */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    pointer-events: none; /* Ne legyen kattintható, amíg rejtve van */
+}
+
+/* HOVER ASZTALI GÉPEN */
+@media (min-width: 769px) {
+    .profile-dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: #3d342c;
+    padding: 10px 16px;
+    font-size: 14px;
+    transition: 0.2s;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background: #fffcf0;
+    color: #d4a373;
+}
+
+.dropdown-menu hr {
+    border: 0;
+    border-top: 1px solid #efe3c9;
+    margin: 8px 0;
+}
+
+.logout-btn {
+    background: none;
+    border: none;
+    color: #d62828;
+    padding: 10px 16px;
+    text-align: left;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.logout-btn:hover {
+    background: #fff5f5;
+}
+
+/* --- MOBIL NÉZET --- */
+.menu-toggle {
+    display: none; 
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: #3d342c;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle { 
+        display: flex; 
+    }
+
+    .nav-right { 
+        display: none; 
+        position: absolute; 
+        top: 100%; 
+        left: 0; 
+        width: 100%; 
+        background: #fffcf0; 
+        flex-direction: column; 
+        padding: 20px; 
+        border-bottom: 1px solid #efe3c9; 
+        gap: 15px;
+    }
+
+    .nav-right.active { 
+        display: flex; 
+    }
+
+    /* Mobilon kikapcsoljuk az asztali rejtést és visszatérünk a kattintás alapú .show-hoz */
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        border: 1px solid #f5f0d6;
+        margin-top: 10px;
+        opacity: 1;
+        visibility: visible;
+        display: none; /* Mobilon display-el vezéreljük a JS miatt */
+        transform: none;
+        pointer-events: auto;
+    }
+
+    .dropdown-menu.show {
+        display: flex;
+    }
+
+    .profile-dropdown {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        width: 100%;
+    }
+}
+
+/* --- NYELVI VÁLASZTÓ --- */
+.lang-selector {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 15px;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #8a817c;
+    padding: 2px 5px;
+    transition: color 0.3s;
+}
+
+.lang-btn.active {
+    color: #4a3f35;
+    font-weight: 700;
+}
+
+.lang-btn:hover {
+    color: #d4a373;
+}
+
+.lang-divider {
+    color: #e0ddd0;
+    font-size: 12px;
+}

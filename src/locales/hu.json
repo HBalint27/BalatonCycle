@@ -1,0 +1,146 @@
+{
+  "common": {
+    "alert_login_required": "A hirdetés feladásához be kell jelentkezned!",
+    "footer_rights": "© 2024 BALATONCYCLE. Minden jog fenntartva."
+  },
+  "navbar": {
+    "search_placeholder": "Helyszín keresése...",
+    "login": "Belépés",
+    "post_ad": "Hirdetés feladása",
+    "profile": {
+      "data": "Személyes adatok",
+      "my_ads": "Meghirdetett Szállások",
+      "my_bookings": "Korábbi Foglalások",
+      "logout": "Kijelentkezés"
+    }
+  },
+  "hero": {
+    "title": "Vágj bele a balatoni kalandba!",
+    "subtitle": "Fedezd fel a tó környékének legbarátságosabb kerékpáros pihenőhelyeit.",
+    "btn_search": "Szállás keresése"
+  },
+  "add_acc": {
+    "title": "Hirdetés feladása",
+    "subtitle": "Ossza meg kerékpárosbarát szálláshelyét a közösséggel.",
+    "form": {
+      "name_label": "Szállás neve / Címe",
+      "category": "Kategória",
+      "price": "Ár / éjszaka (Ft)",
+      "description": "Leírás",
+      "amenities": "Felszereltség",
+      "upload_title": "Képek feltöltése",
+      "upload_help": "Kattintson vagy húzza ide a képeket",
+      "submit": "Hirdetés közzététele"
+    }
+  },
+  "newsletter": {
+    "title": "Ne maradjon le az ajánlatokról!",
+    "subtitle": "Iratkozzon fel hírlevelünkre a legfrissebb túraútvonalakért.",
+    "placeholder": "Az Ön e-mail címe",
+    "button": "Feliratkozás"
+  },
+  "footer": {
+    "links_title": "Hasznos linkek",
+    "main-page": "Kezdőlap",
+    "accommodations": "Szállások",
+    "contact": "Kapcsolat",
+    "rights": "© 2026 BALATONCYCLE. Minden jog fenntartva."
+  },
+  "login_page": {
+  "title": "Üdvözöljük újra!",
+  "subtitle": "Jelentkezzen be fiókjába a folytatáshoz.",
+  "email_label": "E-mail cím",
+  "password_label": "Jelszó",
+  "btn_login": "Bejelentkezés",
+  "no_account": "Még nincs fiókja?",
+  "register_link": "Regisztráljon itt",
+  "error_invalid": "Érvénytelen e-mail vagy jelszó!"
+    },
+    "auth": {
+  "login_tab": "Belépés",
+  "register_tab": "Regisztráció",
+  "welcome": "Üdvözöljük a tóparton!",
+  "back_home": "Vissza a főoldalra",
+  "login_title": "Belépés",
+  "register_title": "Fiók létrehozása",
+  "fields": {
+    "name": "Teljes név",
+    "email": "Email cím",
+    "password": "Jelszó",
+    "confirm_password": "Jelszó megerősítése",
+    "city": "Városod",
+    "phone": "Telefonszám"
+  },
+  "errors": {
+    "name": "Add meg a teljes neved (pl. Kovács János)!",
+    "address": "Érvényes város/cím szükséges!",
+    "phone": "Formátum: 36301234567",
+    "match": "A jelszavak nem egyeznek!",
+    "email": "Érvénytelen email cím!",
+    "password_req": "Min. 8 karakter, kisbetű, nagybetű és szám kell!",
+    "server_fail": "Hibás email cím vagy jelszó!",
+    "no_server": "A szerver nem elérhető!",
+    "reg_success": "Sikeres regisztráció! Most már bejelentkezhet."
+  }
+},
+"slider": {
+  "title": "Fedezd fel a legjobb pihenőhelyeket",
+  "subtitle": "Válogatott, minősített kerékpárosbarát helyek",
+  "location_area": "Balaton környéke",
+  "price_per_night": "Ft / éj",
+  "view_all": "Minden szállás megtekintése"
+},
+"search_page": {
+  "sidebar_title": "Szűrés",
+  "clear_all": "Összes törlése",
+  "show_all_accommodations": "Összes szállás mutatása",
+  "search_label": "Keresés",
+  "price_label": "Ár (éjszaka / Ft)",
+  "type_label": "Szállás típusa",
+  "amenities_label": "Felszereltség",
+  "bike_friendly": "Kerékpárosbarát",
+  "min_rating": "Minimum értékelés",
+  "results_title": "Elérhető szállások",
+  "results_count": "találat",
+  "sort_label": "Rendezés:",
+  "sort_options": {
+    "recommended": "Ajánlott",
+    "cheapest": "Legolcsóbb",
+    "popular": "Legnépszerűbb"
+  },
+  "types": {
+    "Apartman": "Apartman",
+    "Lakóház": "Lakóház"
+  },
+  "no_results": "Nincs a szűrésnek megfelelő szállás.",
+  "booking_btn": "Foglalás",
+  "default_location": "Balaton környéke"
+},
+"profile": {
+    "sidebar_title": "Vezérlőpult",
+    "loading": "Adatok betöltése...",
+    "fetch_error": "Nem sikerült betölteni az adatokat.",
+    "save_success": "Sikeres mentés!",
+    "save_error": "Hiba történt a mentés során.",
+    "delete_confirm": "Biztosan törölni szeretnéd a profilodat? Ez a művelet nem vonható vissza!",
+    "delete_success": "Profil sikeresen törölve.",
+    "delete_error": "Nem sikerült a profil törlése.",
+    "back_home": "Vissza a főoldalra",
+    "form": {
+      "name": "Teljes név",
+      "email": "Email cím",
+      "email_readonly": "Az email nem módosítható",
+      "address": "Lakcím",
+      "phone": "Telefonszám",
+      "btn_save": "Módosítások mentése",
+      "btn_delete": "Profil végleges törlése"
+    },
+    "tabs": {
+      "data_title": "Személyes adatok",
+      "ads_title": "Meghirdetett szállások",
+      "bookings_title": "Korábbi foglalások",
+      "empty_ads": "Még nem hirdettél meg szállást.",
+      "empty_bookings": "Nincsenek korábbi foglalásaid."
+    }
+  }
+}

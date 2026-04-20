@@ -1,0 +1,107 @@
+.hero { 
+    height: 550px; 
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('../../../assets/hatter2.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    position: relative; 
+}
+
+.hero-overlay { 
+    position: absolute; 
+    inset: 0; 
+    background: rgba(0,0,0,0.15); 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.hero-card { 
+    background: rgba(255, 255, 255, 0.95); 
+    padding: 40px; 
+    border-radius: 35px; 
+    text-align: center; 
+    max-width: 680px; 
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08); 
+}
+
+.hero-card h1 { 
+    font-size: 52px; 
+    line-height: 1.1; 
+    margin-bottom: 20px; 
+    color: #1a1a1a; 
+}
+
+.accent-text { 
+    color: #d4a373; 
+    font-style: italic;
+}
+
+.hero-card p { 
+    color: #6d6d6d; 
+    margin-bottom: 35px; 
+    font-size: 18px; 
+}
+
+.hero-buttons { 
+    display: flex; 
+    gap: 15px; 
+    justify-content: center; 
+}
+
+.btn-main { 
+    background: #d4a373; 
+    color: white; 
+    border: none; 
+    padding: 16px 35px; 
+    border-radius: 14px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    box-shadow: 0 8px 20px rgba(212, 163, 115, 0.3); 
+    transition: 0.3s; 
+}
+
+.btn-main:hover { 
+    background: #bc8a5f; 
+    transform: scale(1.02); 
+}
+
+.btn-outline { 
+    background: white; 
+    color: #d4a373; 
+    border: 2px solid #d4a373; 
+    padding: 16px 35px; 
+    border-radius: 14px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: 0.3s;
+}
+
+.btn-outline:hover { 
+    background: #d4a373; 
+    color: white; 
+    border-color: #d4a373;
+    transform: scale(1.02);
+}  
+
+
+@media (max-width: 768px) {
+    .hero-card { 
+        padding: 30px 20px; 
+        width: 100%; 
+        max-width: calc(100% - 40px); 
+        margin: 0 auto; 
+    }
+
+    .hero-card h1 { 
+        font-size: 28px; 
+    }
+
+    .hero-buttons { 
+        flex-direction: column; 
+        width: 100%; 
+    }
+
+    .btn-main, .btn-outline { 
+        width: 100%; 
+    }
+}

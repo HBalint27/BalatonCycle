@@ -1,0 +1,118 @@
+.footer {
+    background-color: white; /* Matches your landing page light cream */
+    padding: 80px 20px 40px;
+    border-top: 1px solid #e0ddd0;
+    color: #4a3f35;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+}
+
+/* Brand Section */
+.footer-brand .logo {
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-brand .logo-text {
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+    color: #4a3f35;
+}
+
+.footer-brand p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #8a817c;
+    max-width: 320px;
+}
+
+/* Link Columns */
+.footer h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #4a3f35;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    color: #6d6d6d;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.footer ul li:hover {
+    color: #d4a373; /* Gold accent on hover */
+    transform: translateX(5px);
+}
+
+.footer-contact p {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    color: #6d6d6d;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    max-width: 1200px;
+    margin: 60px auto 0;
+    padding-top: 30px;
+    border-top: 1px solid #e0ddd0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-bottom p {
+    font-size: 0.85rem;
+    color: #8a817c;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-brand {
+        grid-column: span 2;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 60px 20px 30px;
+    }
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .footer-brand {
+        grid-column: span 1;
+    }
+    .footer-brand p {
+        max-width: 100%;
+    }
+}

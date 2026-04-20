@@ -1,0 +1,150 @@
+{
+  "common": {
+    "alert_login_required": "You must be logged in to post an ad!",
+    "footer_rights": "© 2024 BALATONCYCLE. All rights reserved."
+  },
+  "navbar": {
+    "search_placeholder": "Search locations...",
+    "login": "Login",
+    "post_ad": "Post an Ad",
+    "profile": {
+      "data": "Personal Data",
+      "my_ads": "My Listings",
+      "my_bookings": "Previous Bookings",
+      "logout": "Logout"
+    }
+  },
+  "hero": {
+    "title": "Start your adventure at Lake Balaton!",
+    "subtitle": "Discover the friendliest cycling rest stops and accommodations around the lake.",
+    "btn_search": "Search Accommodations"
+  },
+  "add_acc": {
+    "title": "Post an Ad",
+    "subtitle": "Share your cycling-friendly accommodation with the community.",
+    "form": {
+      "name_label": "Accommodation Name / Address",
+      "category": "Category",
+      "price": "Price / night (HUF)",
+      "description": "Description",
+      "amenities": "Amenities",
+      "upload_title": "Upload Photos",
+      "upload_help": "Click or drag photos here",
+      "submit": "Publish Ad"
+    }
+  },
+  "search_section": {
+    "title": "Find your perfect stay",
+    "filter_all": "All",
+    "filter_hotel": "Hotel",
+    "filter_apartment": "Apartment"
+  },
+  "newsletter": {
+    "title": "Don't miss out on deals!",
+    "subtitle": "Subscribe to our newsletter for the latest trail updates.",
+    "placeholder": "Your email address",
+    "button": "Subscribe"
+  },
+  "footer": {
+    "links_title": "Useful Links",
+    "main-page": "Main Page",
+    "accommodations": "Accommodations",
+    "contact": "Contact",
+    "rights": "© 2026 BALATONCYCLE. All rights reserved."
+  },
+  "login_page": {
+  "title": "Welcome Back!",
+  "subtitle": "Log in to your account to continue.",
+  "email_label": "Email Address",
+  "password_label": "Password",
+  "btn_login": "Login",
+  "no_account": "Don't have an account?",
+  "register_link": "Register here",
+  "error_invalid": "Invalid email or password!"
+    },
+    "auth": {
+  "login_tab": "Login",
+  "register_tab": "Register",
+  "welcome": "Welcome to the lakeshore!",
+  "back_home": "Back to Home",
+  "login_title": "Login",
+  "register_title": "Create Account",
+  "fields": {
+    "name": "Full Name",
+    "email": "Email Address",
+    "password": "Password",
+    "confirm_password": "Confirm Password",
+    "city": "Your City",
+    "phone": "Phone Number"
+  },
+  "errors": {
+    "name": "Please provide your full name (e.g. John Doe)!",
+    "address": "Valid city/address required!",
+    "phone": "Format: 36301234567",
+    "match": "Passwords do not match!",
+    "email": "Invalid email address!",
+    "password_req": "Min. 8 characters, upper, lower, and number required!",
+    "server_fail": "Incorrect email or password!",
+    "no_server": "Server is unavailable!",
+    "reg_success": "Successful registration! You can now log in."
+  }
+},
+"slider": {
+  "title": "Discover the best rest stops",
+  "subtitle": "Handpicked, certified cycle-friendly places",
+  "location_area": "Lake Balaton area",
+  "price_per_night": "HUF / night",
+  "view_all": "View all accommodations"
+},
+"search_page": {
+  "sidebar_title": "Filters",
+  "clear_all": "Clear all",
+  "price_label": "Price (per night / HUF)",
+  "type_label": "Accommodation Type",
+  "amenities_label": "Amenities",
+  "bike_friendly": "Bike Friendly",
+  "min_rating": "Minimum Rating",
+  "results_title": "Available Accommodations",
+  "results_count": "results",
+  "sort_label": "Sort by:",
+  "sort_options": {
+    "recommended": "Recommended",
+    "cheapest": "Cheapest",
+    "popular": "Most Popular"
+  },
+  "types": {
+    "Apartman": "Apartment",
+    "Lakóház": "House"
+  },
+  "no_results": "No accommodations match your filters.",
+  "booking_btn": "Book Now",
+  "default_location": "Lake Balaton area"
+  },
+  "profile": {
+    "sidebar_title": "Dashboard",
+    "loading": "Loading data...",
+    "fetch_error": "Failed to load data.",
+    "save_success": "Saved successfully!",
+    "save_error": "Error occurred during saving.",
+    "delete_confirm": "Are you sure you want to delete your profile? This action cannot be undone!",
+    "delete_success": "Profile successfully deleted.",
+    "delete_error": "Failed to delete profile.",
+    "back_home": "Back to Home",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "email_readonly": "Email cannot be modified",
+      "address": "Address",
+      "phone": "Phone Number",
+      "btn_save": "Save Changes",
+      "btn_delete": "Permanently Delete Profile"
+    },
+    "tabs": {
+      "data_title": "Personal Data",
+      "ads_title": "My Listings",
+      "bookings_title": "Past Bookings",
+      "empty_ads": "You haven't posted any listings yet.",
+      "empty_bookings": "You have no past bookings."
+    }
+  }
+}
